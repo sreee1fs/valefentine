@@ -48,6 +48,7 @@
       justify-content: center;
       position: relative;
     }
+    #yesBtn {
     button {
       padding: 14px 26px;
       border: none;
@@ -102,8 +103,8 @@
     <div class="date">14.02.2026</div>
     <p>
       Филюша, ты самый тёплый человек в моей жизни.
-      Я хочу, чтобы этот день был про нас, про улыбки,
-      котят и любовь, которая становится только сильнее.
+      Я хочу, чтобы мы всегда были вместе, рядом.
+      Поздравляю тебя с днём всех влюблённых. ❤️ 
     </p>
 
     <div class="buttons">
@@ -117,11 +118,11 @@
     const noBtn = document.getElementById('noBtn');
     let scale = 1;
     let texts = [
-      'Ты уверен? 🥺',
+      'Ты уверен? ',
       'А если котята? 🐱',
-      'Я очень старался 💔',
-      'Ну пожалуйста 🥹',
-      'Выбора нееет, становись ❤️'
+      'Я очень старался',
+      'Ну пожалуйста..',
+      'У тебя нет выбора, мой милый ❤️'
     ];
     let textIndex = 0;
 
@@ -138,7 +139,7 @@
     });
 
     yesBtn.addEventListener('click', () => {
-      document.body.innerHTML = '<h1 style="color:white;text-align:center">Я тебя люблю, Филюша ❤️🐱</h1>';
+      document.body.innerHTML = '<h1 style="color:white;text-align:center">Я тебя люблю, Филюша ❤️</h1>';
     });
 
     const floatContainer = document.querySelector('.float');
